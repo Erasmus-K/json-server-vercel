@@ -1,58 +1,587 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Alice Johnson",
-      "email": "alice@mail.com",
-      "password": "1234"
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin User",
+      "email": "admin@construction.com"
     },
     {
-      "id": 2,
-      "name": "Bob Smith",
-      "email": "bob@mail.com",
-      "password": "abcd"
+      "id": "2",
+      "username": "agent1",
+      "password": "agent123",
+      "role": "site_agent",
+      "name": "Site Agent",
+      "email": "agent@construction.com"
+    },
+    {
+      "id": "3",
+      "username": "client1",
+      "password": "client123",
+      "role": "client",
+      "name": "John Client",
+      "email": "client@example.com"
+    },
+    {
+      "id": "fddd",
+      "username": "test",
+      "password": "test",
+      "name": "Test User",
+      "email": "test@test.com",
+      "role": "admin"
+    },
+    {
+      "id": "38ea",
+      "username": "Foreman",
+      "password": "qwert",
+      "name": "Rigde",
+      "email": "ridge@gmail.com",
+      "role": "site_agent"
     }
   ],
-  "activities": [
+  "works": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "Morning Coding Session",
-      "description": "Work on React components",
-      "date": "2024-01-15",
-      "startTime": "09:00",
-      "endTime": "11:00",
-      "status": "pending"
+      "id": "1",
+      "title": "Foundation Work",
+      "description": "Concrete foundation for Building A",
+      "clientId": 3,
+      "status": "in_progress",
+      "startDate": "2024-01-15",
+      "endDate": "2024-02-15",
+      "estimatedValue": 50000,
+      "actualValue": 0,
+      "createdBy": 1,
+      "createdAt": "2024-01-10T10:00:00Z"
     },
     {
-      "id": 2,
-      "userId": 1,
-      "title": "Team Meeting",
-      "description": "Weekly standup meeting",
-      "date": "2024-01-15",
-      "startTime": "14:00",
-      "endTime": "15:00",
-      "status": "completed"
+      "title": "Bridge Constrction",
+      "description": "This brigde is known as Ngara bridge",
+      "clientId": 3,
+      "estimatedValue": 2000,
+      "startDate": "2025-11-20",
+      "endDate": "2025-11-24",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": 1,
+      "createdAt": "2025-11-14T13:30:01.260Z",
+      "id": "2"
     },
     {
-      "id": 3,
-      "userId": 2,
-      "title": "Study JavaScript",
-      "description": "Learn advanced concepts",
+      "title": "Bridge ",
+      "description": "hhebcd",
+      "clientId": 3,
+      "estimatedValue": 1999.99,
+      "startDate": "2025-11-28",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": 1,
+      "createdAt": "2025-11-14T13:30:52.810Z",
+      "id": "3"
+    },
+    {
+      "id": "92da",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:34.086Z"
+    },
+    {
+      "id": "5653",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:35.097Z"
+    },
+    {
+      "id": "265b",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:35.513Z"
+    },
+    {
+      "id": "7907",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:38.168Z"
+    },
+    {
+      "id": "ccdd",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:44.717Z"
+    },
+    {
+      "id": "be30",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:45.452Z"
+    },
+    {
+      "id": "c953",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:45.631Z"
+    },
+    {
+      "id": "0cd5",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:50.999Z"
+    },
+    {
+      "id": "db4f",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:51.404Z"
+    },
+    {
+      "id": "5f79",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:51.587Z"
+    },
+    {
+      "id": "c113",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:51.768Z"
+    },
+    {
+      "id": "e41a",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:56.738Z"
+    },
+    {
+      "id": "555b",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:57.015Z"
+    },
+    {
+      "id": "93b7",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:57.192Z"
+    },
+    {
+      "id": "1774",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:59.295Z"
+    },
+    {
+      "id": "d034",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:59.455Z"
+    },
+    {
+      "id": "e6de",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:59.628Z"
+    },
+    {
+      "id": "6ea5",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:59.762Z"
+    },
+    {
+      "id": "06b1",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:49:59.894Z"
+    },
+    {
+      "id": "b11c",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:50:00.076Z"
+    },
+    {
+      "id": "bf48",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:50:00.359Z"
+    },
+    {
+      "id": "65f5",
+      "title": "Foundation",
+      "description": "test",
+      "clientId": 3,
+      "estimatedValue": 400,
+      "startDate": "2025-11-12",
+      "endDate": "2025-11-29",
+      "actualValue": 0,
+      "status": "in_progress",
+      "createdBy": "1",
+      "createdAt": "2025-11-14T20:50:00.811Z"
+    }
+  ],
+  "siteVisits": [
+    {
+      "id": "1",
+      "workId": 1,
+      "visitDate": "2024-01-16",
+      "inspector": "Site Agent",
+      "qcChecklist": {
+        "materialQuality": true,
+        "safetyCompliance": true,
+        "workmanship": false,
+        "timelineAdherence": true
+      },
+      "photos": [
+        "photo1.jpg",
+        "photo2.jpg"
+      ],
+      "notes": "Minor workmanship issues noted",
+      "createdAt": "2024-01-16T14:30:00Z"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "1",
+      "name": "Excavator CAT 320",
+      "type": "heavy_machinery",
+      "status": "available",
+      "assignedTo": null,
+      "workId": null,
+      "dailyRate": 500
+    },
+    {
+      "id": "2",
+      "name": "Concrete Mixer",
+      "type": "machinery",
+      "status": "available",
+      "assignedTo": null,
+      "workId": null,
+      "dailyRate": 200
+    },
+    {
+      "id": "eb71",
+      "name": "Tractor",
+      "type": "vehicles",
+      "status": "available",
+      "assignedTo": null,
+      "workId": null,
+      "dailyRate": 3
+    }
+  ],
+  "labourLogs": [
+    {
+      "id": "1",
+      "workId": 1,
       "date": "2024-01-16",
-      "startTime": "10:00",
-      "endTime": "12:00",
-      "status": "in-progress"
+      "workers": [
+        {
+          "name": "John Mason",
+          "role": "mason",
+          "hoursWorked": 8,
+          "hourlyRate": 25
+        },
+        {
+          "name": "Mike Helper",
+          "role": "casual",
+          "hoursWorked": 8,
+          "hourlyRate": 15
+        }
+      ],
+      "totalCost": 320,
+      "createdAt": "2024-01-16T18:00:00Z"
     },
     {
-      "id": 4,
-      "userId": 2,
-      "title": "Build React App",
-      "description": "Create productivity tracker",
+      "id": "e910",
+      "workId": 1,
+      "date": "2025-11-06",
+      "workers": [
+        {
+          "name": "Allan",
+          "role": "engineer",
+          "hoursWorked": 4,
+          "hourlyRate": 1
+        }
+      ],
+      "totalCost": 4,
+      "createdAt": "2025-11-14T20:54:00.151Z"
+    },
+    {
+      "id": "686f",
+      "workId": 3,
+      "date": "2025-10-29",
+      "workers": [
+        {
+          "name": "Abel",
+          "role": "engineer",
+          "hoursWorked": 3,
+          "hourlyRate": 1
+        }
+      ],
+      "totalCost": 3,
+      "createdAt": "2025-11-14T20:58:21.686Z"
+    }
+  ],
+  "finances": [
+    {
+      "id": "1",
+      "workId": 1,
+      "type": "expense",
+      "category": "labour",
+      "amount": 320,
+      "description": "Daily labour cost - Jan 16",
       "date": "2024-01-16",
-      "startTime": "14:00",
-      "endTime": "16:00",
-      "status": "pending"
+      "createdAt": "2024-01-16T18:00:00Z"
+    },
+    {
+      "id": "2",
+      "workId": 1,
+      "type": "expense",
+      "category": "equipment",
+      "amount": 200,
+      "description": "Concrete mixer rental - Jan 16",
+      "date": "2024-01-16",
+      "createdAt": "2024-01-16T18:00:00Z"
+    },
+    {
+      "id": "78a0",
+      "workId": 1,
+      "type": "expense",
+      "category": "labour",
+      "amount": 4,
+      "description": "Daily labour cost - 11/6/2025",
+      "date": "2025-11-06",
+      "createdAt": "2025-11-14T20:54:00.187Z"
+    },
+    {
+      "id": "9aa4",
+      "workId": 3,
+      "type": "expense",
+      "category": "labour",
+      "amount": 3,
+      "description": "Daily labour cost - 10/29/2025",
+      "date": "2025-10-29",
+      "createdAt": "2025-11-14T20:58:21.712Z"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "1",
+      "workId": 1,
+      "event": "Work Started",
+      "description": "Foundation work commenced",
+      "date": "2024-01-15",
+      "createdBy": 1,
+      "createdAt": "2024-01-15T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "workId": 1,
+      "event": "Site Visit",
+      "description": "QC inspection completed",
+      "date": "2024-01-16",
+      "createdBy": 2,
+      "createdAt": "2024-01-16T14:30:00Z"
+    },
+    {
+      "event": "Work Created",
+      "description": "Bridge Constrction has been created",
+      "date": "2025-11-20",
+      "createdBy": 1,
+      "createdAt": "2025-11-14T13:30:01.365Z",
+      "id": "3"
+    },
+    {
+      "event": "Work Created",
+      "description": "Bridge  has been created",
+      "date": "2025-11-28",
+      "createdBy": 1,
+      "createdAt": "2025-11-14T13:30:52.846Z",
+      "id": "4"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": 3,
+      "workId": 1,
+      "title": "Work Started",
+      "message": "Foundation Work has been started",
+      "read": true,
+      "createdAt": "2024-01-15T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": 3,
+      "workId": 1,
+      "title": "Site Visit Completed",
+      "message": "QC inspection completed for Foundation Work",
+      "read": true,
+      "createdAt": "2024-01-16T14:30:00Z"
+    },
+    {
+      "userId": 3,
+      "title": "New Work Created",
+      "message": "A new work \"Bridge Constrction\" has been created for you",
+      "read": false,
+      "createdAt": "2025-11-14T13:30:01.439Z",
+      "id": "3"
+    },
+    {
+      "userId": 3,
+      "title": "New Work Created",
+      "message": "A new work \"Bridge \" has been created for you",
+      "read": false,
+      "createdAt": "2025-11-14T13:30:52.894Z",
+      "id": "4"
     }
   ]
 }
